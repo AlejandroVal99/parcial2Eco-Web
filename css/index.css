@@ -1,0 +1,85 @@
+*{
+    font-family: 'Nunito', sans-serif; 
+}
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto ;
+    padding: 20px 20px 20px 20px;
+}
+.containerPreAct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    width: 65%;
+    margin: 8px ;
+    padding: 20px 20px 8px 20px;
+    border-radius: 1em;
+}
+.containerPreAct p{
+    color: white;
+}
+
+.title{
+    color: white;
+}
+.preguntaAct{
+    margin: 8px;
+    font-size: 25px;
+}
+button{
+    padding: 8px;
+    border-radius: 8px;
+    border-color: white;
+    margin: 8px;
+    background:blue;
+    color:white;
+}
+.containerCreatePre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.continerHistorico{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.preComponent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:solid blue;
+    width: 190%;
+    border-radius: 1em;
+}
+.input_text{
+    width: 150%;
+    border-radius: 10px;
+    color: blue;
+    
+}
+#continerPreHis{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.puntaPregunta{
+    margin:4px;
+    font-weight: 500;
+    font-size: 16px;
+}
+.textPregunta{
+    font-size: 20px;
+    font-weight: 400;
+}

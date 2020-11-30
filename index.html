@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAV preguntas</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mainContainer">
+        <h1>JuliMarketing</h1>
+        <div class="containerPreAct">
+            <h2 class="title">Pregunta Actual</h2>
+
+            <div class="containerPreAct">
+                <p class="preguntaAct" id="preguntaAct">No hay una pregunta actual</p>
+                <p id="puntajePreAct"></p>
+                <button id="btn_envHistori">Enviar al historico</button>
+            </div>
+
+        </div>
+        <div class="containerCreatePre">
+            <p>Escriba aquí la pregunta actual del focus group</p>
+            <textarea class="input_text" rows="4" id="textQuestion" name="Info post"
+                placeholder="Escribe la pregunta que quieres hacer"></textarea>
+            <button id="btn_newQuestion">Crear pregunta</button>
+        </div>
+        <div class="continerHistorico">
+            <h2 class="titleNormal">Historico</h2>
+            <div id="continerPreHis">
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
+
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase.js"></script>
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyBv5nWjRCtx9EXQkcjd3zy5Dk7y8ZQJsRI",
+        authDomain: "pruebaeco-ce227.firebaseapp.com",
+        databaseURL: "https://pruebaeco-ce227.firebaseio.com",
+        projectId: "pruebaeco-ce227",
+        storageBucket: "pruebaeco-ce227.appspot.com",
+        messagingSenderId: "831118328954",
+        appId: "1:831118328954:web:f1703d29fa9946207f27c3",
+        measurementId: "G-XY2DZ2GDBZ"
+    };
+    firebase.initializeApp(firebaseConfig);
+</script>
+
+<script>
+    const database = firebase.database();
+</script>
+
+<script src="component/questionComponent.js"></script>
+<script src="js/index.js"></script>
